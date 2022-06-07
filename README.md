@@ -13,7 +13,7 @@ Traditional checkout donation systems (e.g. round-up-and-donate at the grocery s
 ### The Donation Platform
 The Donation platform consists of the following components:
 - `donations-api`:  API endpoints used to integrate StreamPay donate into a Solana Pay checkout flow
-- `donations-component`: ready-to-use React component that uses Dona's Donations API
+- `donations-component`: ready-to-use React component that uses Stream Protocol´s Donations API
 - `merchant-portal`: web app for merchants to configure the donation options presented at checkout and to access metadata and analytics
 - `recipient-portal`: web app for donation recipients to access metadata and analytics
 - `consumer-portal`: web app for consumers to access metadata and analytics
