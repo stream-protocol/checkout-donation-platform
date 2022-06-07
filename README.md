@@ -5,7 +5,7 @@ Stream Donate is a checkout donations platform built on Solana Pay
 - [Video Demo](https://www.youtube.com/watch?v=uzxK5JNRXHM)
 
 ### Project Description
-StreamPay Donate is a checkout donations platform built on Solana Pay. Using Dona, merchants can set up a checkout donation campaign that smoothly integrates into their existing Solana Pay checkout flow to enable charitable donations. With flexible integration options, plug-and-play React components, no-code configuration settings, and analytics, we make it easy for merchants to showcase their values, support their community, and do good for the world.
+StreamPay "Donate" is a checkout donations platform built on Solana Pay. Using StreamPay, merchants can set up a checkout donation campaign that smoothly integrates into their existing Solana Pay checkout flow to enable charitable donations. With flexible integration options, plug-and-play React components, no-code configuration settings, and analytics, we make it easy for merchants to showcase their values, support their community, and do good for the world.
 
 ### Why we built it
 Traditional checkout donation systems (e.g. round-up-and-donate at the grocery store) generate over $605 M annually in charitable giving. However, by running on traditional payment rails, traditional checkout donations suffer from issues such as high merchant processing fees, slow settlement of time-sensitive funds, limited transparency on donation delivery, and limited accessibility. With the new Solana Pay rails, we see an opportunity to reimagine and improve the checkout donations experience for merchants, consumers, and donation recipients alike.
