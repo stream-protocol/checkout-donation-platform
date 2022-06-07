@@ -12,7 +12,7 @@ Traditional checkout donation systems (e.g. round-up-and-donate at the grocery s
 
 ### The Donation Platform
 The Donation platform consists of the following components:
-- `donations-api`:  API endpoints used to integrate StreamPay donate into a Solana Pay checkout flow
+- `donations-api`:  API endpoints used to integrate StreamPay donate into a StreamPay / Solana Pay checkout flow
 - `donations-component`: ready-to-use React component that uses Stream Protocol´s Donations API
 - `merchant-portal`: web app for merchants to configure the donation options presented at checkout and to access metadata and analytics
 - `recipient-portal`: web app for donation recipients to access metadata and analytics
@@ -21,7 +21,7 @@ The Donation platform consists of the following components:
 - `checkout-demo`: mock e-commerce checkout page to showcase the Donations Component
 
 ## Integrating Donation Platform Into A Checkout Flow
-Stream Protocol´s Donations API and Donations Component are used to present customers with an option to donate in the checkout flow for a e-commerce store or a point-of-sale kiosk using Solana Pay.
+Stream Protocol´s Donations API and Donations Component are used to present customers with an option to donate in the checkout flow for a e-commerce store or a point-of-sale kiosk using StreamPay.
 ### Quick Start
 Install the Donations API and the Donations Component.
 ```
@@ -46,10 +46,10 @@ function Example(props) {
 }
 ```
 After the customer selects a donation using the Donation Component, `selectedOption` contains information that supports two use cases of Solana Pay:
-- Customer pays the donation recipient separately using Solana Pay's [Transfer Request Specification](https://github.com/solana-labs/solana-pay/blob/link-request/SPEC.md#specification-transfer-request) 
-- Customer pays both the merchant and the donation recipient with a single payment using Solana Pay's [Transaction Request Specification](https://github.com/solana-labs/solana-pay/blob/link-request/SPEC.md#specification-transaction-request) 
+- Customer pays the donation recipient separately using StreamPay / Solana Pay's [Transfer Request Specification](https://github.com/solana-labs/solana-pay/blob/link-request/SPEC.md#specification-transfer-request) 
+- Customer pays both the merchant and the donation recipient with a single payment using Solana Pay / StreamPay's [Transaction Request Specification](https://github.com/solana-labs/solana-pay/blob/link-request/SPEC.md#specification-transaction-request) 
 
-Use either of these to present the donation to the customer. See Solana Pay's [Merchant Integration](https://docs.solanapay.com/core/merchant-integration) for an example.
+Use either of these to present the donation to the customer. ToDo StreamPay Donate Doc [Merchant Integration](https://docs.streampay.com/core/merchant-integration) for an example. 
 
 *Note: As of 3/17/22, **Transaction Requests have not been officially released by Solana Pay**, so Transaction Requests have been implemented using the unmerged pull request code.*
 ```javascript
