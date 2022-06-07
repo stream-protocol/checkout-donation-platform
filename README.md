@@ -10,7 +10,7 @@ StreamPay "Donate" is a checkout donations platform built on Solana Pay. Using S
 ### Why we built it
 Traditional checkout donation systems (e.g. round-up-and-donate at the grocery store) generate over $605 M annually in charitable giving. However, by running on traditional payment rails, traditional checkout donations suffer from issues such as high merchant processing fees, slow settlement of time-sensitive funds, limited transparency on donation delivery, and limited accessibility. With the new Solana Pay rails, we see an opportunity to reimagine and improve the checkout donations experience for merchants, consumers, and donation recipients alike.
 
-### The Dona Platform
+### The Donation Platform
 The Donation platform consists of the following components:
 - `donations-api`:  API endpoints used to integrate StreamPay donate into a Solana Pay checkout flow
 - `donations-component`: ready-to-use React component that uses Dona's Donations API
@@ -20,7 +20,7 @@ The Donation platform consists of the following components:
 - `server`: backend logic for the API and the merchant, recipient, and consumer portals
 - `checkout-demo`: mock e-commerce checkout page to showcase the Donations Component
 
-## Integrating Dona Into A Checkout Flow
+## Integrating Donation Platform Into A Checkout Flow
 Stream Protocol´s Donations API and Donations Component are used to present customers with an option to donate in the checkout flow for a e-commerce store or a point-of-sale kiosk using Solana Pay.
 ### Quick Start
 Install the Donations API and the Donations Component.
