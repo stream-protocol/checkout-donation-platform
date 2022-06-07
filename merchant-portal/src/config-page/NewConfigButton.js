@@ -19,102 +19,144 @@ import Container from '@mui/material/Container';
 
 import { RecipientsContext } from '../MerchantPortal';
 
-import DonationComponent from '@riptide-dona/react-components.ui.donation-component';
+import DonationComponent from '"@stream-donate/react-components.ui.donation-component';
 
 function ConfigTemplate(props) {
-  const theme = useTheme();
-  const { config } = props;
-  const [selectedOption, setSelectedOption] = React.useState();
+    const theme = useTheme();
+    const { config } = props;
+    const [selectedOption, setSelectedOption] = React.useState();
 
-  return (
-    <Card>
-      <CardActionArea>
-        <CardContent>
-          <Typography>{config.name}</Typography>
-          <Box sx={{bgcolor:"#e7ebf0", pt:4, pb:4, mt:2}}>
-            <Container maxWidth="xs">
-              <Paper sx={{p:2}}>
-                <DonationComponent configOverride={config} setSelectedOption={setSelectedOption}/>
-              </Paper>
-            </Container>
-          </Box>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-  )
+    return ( <
+        Card >
+        <
+        CardActionArea >
+        <
+        CardContent >
+        <
+        Typography > { config.name } < /Typography> <
+        Box sx = {
+            { bgcolor: "#e7ebf0", pt: 4, pb: 4, mt: 2 }
+        } >
+        <
+        Container maxWidth = "xs" >
+        <
+        Paper sx = {
+            { p: 2 }
+        } >
+        <
+        DonationComponent configOverride = { config }
+        setSelectedOption = { setSelectedOption }
+        /> < /
+        Paper > <
+        /Container> < /
+        Box > <
+        /CardContent> < /
+        CardActionArea > <
+        /Card>
+    )
 }
 
 function NewConfigButton(props) {
-  const { setMerchantConfigs } = props;
-  const recipients = React.useContext(RecipientsContext);
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+    const { setMerchantConfigs } = props;
+    const recipients = React.useContext(RecipientsContext);
+    const theme = useTheme();
+    const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+    const handleClose = () => {
+        setOpen(false);
+    };
 
-  const addNewConfig = (config) => {
-    setMerchantConfigs(
-      (prevMerchantConfigs) => {
-        if (prevMerchantConfigs.inactive_configs) {
-          return {
-            ...prevMerchantConfigs,
-            "inactive_configs": [...prevMerchantConfigs.inactive_configs, config],
-          };  
-        } else {
-          return {
-            ...prevMerchantConfigs,
-            "inactive_configs": [config],
-          };
-        }   
-      }
-    )
-    handleClose();
-  };
-  
-  // TODO: fix grid system
+    const addNewConfig = (config) => {
+        setMerchantConfigs(
+            (prevMerchantConfigs) => {
+                if (prevMerchantConfigs.inactive_configs) {
+                    return {
+                        ...prevMerchantConfigs,
+                        "inactive_configs": [...prevMerchantConfigs.inactive_configs, config],
+                    };
+                } else {
+                    return {
+                        ...prevMerchantConfigs,
+                        "inactive_configs": [config],
+                    };
+                }
+            }
+        )
+        handleClose();
+    };
 
-  const defaultConfigs = getDefaultConfigs(recipients);
+    // TODO: fix grid system
 
-  return (
-    <div>
-      <Button 
-        onClick={handleClickOpen}
-        startIcon={<AddCircleOutlineIcon />} 
-        fullWidth 
-        sx={{height:theme.spacing(25)}} 
-        variant="outlined"
-      >
-        Create new configuration
-      </Button>
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        maxWidth="lg"
-      >
-        <DialogTitle>
-          Pick A Donation Configuration Template
-        </DialogTitle>
-        <DialogContent>
-          <Grid container spacing={2}>
-            {defaultConfigs.map((config, index) => (
-              <Grid item lg={4} key={index} onClick={() => addNewConfig(config)} >
-                <ConfigTemplate config={config} />
-              </Grid>
-            ))}
-          </Grid>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-        </DialogActions>
-      </Dialog>
-    </div>
-  );
+    const defaultConfigs = getDefaultConfigs(recipients);
+
+    return ( <
+        div >
+        <
+        Button onClick = { handleClickOpen }
+        startIcon = { < AddCircleOutlineIcon / > }
+        fullWidth sx = {
+            { height: theme.spacing(25) }
+        }
+        variant = "outlined" >
+        Create new configuration <
+        /Button> <
+        Dialog open = { open }
+        onClose = { handleClose }
+        maxWidth = "lg" >
+        <
+        DialogTitle >
+        Pick A Donation Configuration Template <
+        /DialogTitle> <
+        DialogContent >
+        <
+        Grid container spacing = { 2 } > {
+            defaultConfigs.map((config, index) => ( <
+                Grid item lg = { 4 }
+                key = { index }
+                onClick = {
+                    () => addNewConfig(config)
+                } >
+                <
+                ConfigTemplate config = { config }
+                /> < /
+                Grid >
+            ))
+        } <
+        /Grid> < /
+        DialogContent > <
+        DialogActions >
+        <
+        Button onClick = { handleClose } > Cancel < /Button> < /
+        DialogActions > <
+        /Dialog> < /
+        div >
+    );
+}
+
+export default NewConfigButton;
+config = { config }
+/> < /
+Grid >
+))
+} <
+/Grid> < /
+DialogContent > <
+    DialogActions >
+    <
+    Button onClick = { handleClose } > Cancel < /Button> < /
+DialogActions > <
+    /Dialog> < /
+div >
+);
+}
+
+export default NewConfigButton;
+export default NewConfigButton;
+);
 }
 
 export default NewConfigButton;

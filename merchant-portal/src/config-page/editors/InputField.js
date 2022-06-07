@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CurrencyTextField from '@riptide-dona/react-components.ui.currency-text-field';
+import CurrencyTextField from '@stream-donate/react-components.ui.currency-text-field';
 
 export function centsToDollars(cents) {
     return (cents / 100).toLocaleString(
@@ -17,16 +17,20 @@ function InputField(props) {
 
     return ( <
         CurrencyTextField sx = {
-            { p: 4 } }
+            { p: 4 }
+        }
         label = { label }
         variant = "outlined"
         value = { inputAmount / 100 }
         currencySymbol = "$"
         outputFormat = "string"
         onChange = {
-            (event, value) => setInputAmount(value * 100) }
+            (event, value) => setInputAmount(value * 100)
+        }
         />
     );
 }
+
+export default InputField;
 
 export default InputField;

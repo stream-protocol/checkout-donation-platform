@@ -25,13 +25,13 @@ Dona's Donations API and Donations Component are used to present customers with 
 ### Quick Start
 Install the Donations API and the Donations Component.
 ```
-npm config set '@riptide-dona:registry' https://node.bit.dev
-npm i stream-donate-api @riptide-dona/react-components.ui.donation-component
+npm config set '@stream-donate:registry' https://node.bit.dev
+npm i stream-donate-api @stream-donate/react-components.ui.donation-component
 ```
 Render the Donation Component in the checkout flow by passing in the merchant's public key and the purchase subtotal (pre-donation) in cents as props.
 ```javascript
 import  *  as  React  from  'react';
-import  DonationComponent  from  '@riptide-dona/react-components.ui.donation-component';
+import  DonationComponent  from  '@stream-donate/react-components.ui.donation-component';
 
 function Example(props) {
 	const { merchantPublicKey, purchaseCents } = props;
