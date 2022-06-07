@@ -20,7 +20,7 @@ The Stream Donation platform consists of the following components:
 - `server`: backend logic for the API and the merchant, recipient, and consumer portals
 - `checkout-demo`: mock e-commerce checkout page to showcase the Donations Component
 
-## Integrating Donation Platform Into A Checkout Flow
+## Integrating Stream Donation Platform Into A Checkout Flow
 Stream Protocol´s Donations API and Donations Component are used to present customers with an option to donate in the checkout flow for a e-commerce store or a point-of-sale kiosk using StreamPay.
 ### Quick Start
 Install the Donations API and the Donations Component.
