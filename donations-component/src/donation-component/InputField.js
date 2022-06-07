@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CurrencyTextField from '@stream-donate/react-components.ui.currency-text-field';
+import CurrencyTextField from '"@stream-donate/react-components.ui.currency-text-field';
 
 function InputField(props) {
     const { inputAmount, setInputAmount } = props;

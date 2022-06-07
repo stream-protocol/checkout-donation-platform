@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import DonationComponent from '@stream-donate/react-components.ui.donation-component';
+import DonationComponent from '"@stream-donate/react-components.ui.donation-component';
 
 function ActiveConfig(props) {
     const { config } = props;

@@ -12,7 +12,7 @@ import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Avatar from '@mui/material/Avatar';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
-import DonationComponent from '"@stream-donate/react-components.ui.donation-component';
+import DonationComponent from '@stream-donate/react-components.ui.donation-component';
 import logo from './spaylogo.svg';
 import { getDonationConfig, markDonationComplete } from 'stream-donate-api';
 
