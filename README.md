@@ -142,7 +142,7 @@ Dona consists of a React app frontend, Flask App backend, and PostgreSQL databas
 ### PostgreSQL Setup
 Set up a local [PostgreSQL db](https://www.codementor.io/@engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb).
 
-Once PostgreSQL is installed, create the database for the application within postgresql: `CREATE DATABASE dona;`
+Once PostgreSQL is installed, create the database for the application within postgresql: `CREATE DATABASE donate;`
 
 ### Flask App Setup
 1. Navigate to the `/server` directory
@@ -150,14 +150,14 @@ Once PostgreSQL is installed, create the database for the application within pos
 3. Create virtualenv: `virtualenv venv`
 4. Activate virtualenv: `source venv/bin/activate`
 5. Install dependencies: `pip install -r requirements.txt`
-6. Set environment variables e.g. `export SECRET_KEY=foo && export DATABASE_URI=postgresql://user:password@localhost:5432/dona && export FLASK_ENV=development && export APP_BASE_URL=http://127.0.0.1:5000`
+6. Set environment variables e.g. `export SECRET_KEY=foo && export DATABASE_URI=postgresql://user:password@localhost:5432/donate && export FLASK_ENV=development && export APP_BASE_URL=http://127.0.0.1:5000`
 7. Apply database migrations: `flask db upgrade`
 8. Set an env variable with the public key of a wallet (e.g. Phantom) you want to log into the merchant dashboard with e.g. `export MERCHANT_DEMO_KEY=6sXT9zFDFgJMmXPHMiZM8maSx6KFosVbLkC4Ho9GezHz`. Make sure that **you have access to this wallet**, otherwise wallet adapter will not work when you try to log in.
 9. Generate some dummy demo data to populate the dashboard: `python generate_sample_data.py`
 10. Run app: `flask run`
 
 ### React App Setup
-The Donations API and Donations Component can be used with just the PostgreSQL and Flask App server running. 
+The Stream Donations API and Donations Component can be used with just the PostgreSQL and Flask App server running. 
 
 To demo the merchant, recipient, or consumer portals, or the checkout demo, use the following steps:
 1. Navigate to the directory of the React App (e.g. `cd merchant-portal`

@@ -1,6 +1,6 @@
 {
-    "short_name": "Stream Protocol",
-    "name": "Checkout Donation Platform",
+    "short_name": "Merchant Portal",
+    "name": "StreamPay - Checkout Donation Platform",
     "icons": [{
             "src": "favicon.ico",
             "sizes": "64x64 32x32 24x24 16x16",
