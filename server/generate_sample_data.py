@@ -8,15 +8,15 @@ from random import choice, choices
 
 # Actual Solana wallet addresses of real donation recipients
 RECIPIENT_TO_KEY = {
-	'Aid for Ukraine': '66pJhhESDjdeBBDdkKmxYYd7q6GUggYPWjxpMKNX39KV',
-	'FTX Foundation': '4yvyBWD8BNZdVtEZnUGHPjb1crohSRia1CJ9jfZr6H1E'
+	'Aid for Ukraine': 'Au9LysG1UpiXe1X2doNzjZp1E3veoLBrgWgbXfFGiDjq',
+	'Stream Foundation': 'CWLqSoGxgsxGEReYkd33XURQXNyhgJUK4APcQXo3yKF6'
 }
 
 # To demo login with Solana wallet adaptor, replace demo keys with
 # wallet addresses you have access to
-RECIPIENT_DEMO_KEY = environ.get('RECIPIENT_DEMO_KEY', 'PnENxubNFCZBPQR3nD4rJWcDwZ1d2FqGRMSWzwPpAnK')
+RECIPIENT_DEMO_KEY = environ.get('RECIPIENT_DEMO_KEY', 'GRt9dCe37SA4tZerRAK6JqbmSEZrixyUfLuJVWjf4bnM')
 MERCHANT_DEMO_KEY = environ.get('MERCHANT_DEMO_KEY', '23g35VCLME1k7HjybhqRdXX5LFZVdoxwv9HwfVNjh3uE')
-CONSUMER_DEMO_KEY = environ.get('CONSUMER_DEMO_KEY', '9qZTcVj5h6TPQy3nyhHg9UWf9aSkfWYVTH5Yx1NGCzKp')
+CONSUMER_DEMO_KEY = environ.get('CONSUMER_DEMO_KEY', 'GRt9dCe37SA4tZerRAK6JqbmSEZrixyUfLuJVWjf4bnM')
 
 # Connect to db
 SQLALCHEMY_DATABASE_URI = environ['DATABASE_URI']
@@ -29,13 +29,13 @@ with Session(engine) as session:
 	DEMO_RECIPIENT_KEYS = [RECIPIENT_DEMO_KEY] + list(RECIPIENT_TO_KEY.values()) + [RECIPIENT_DUMMY_KEY]
 
 	sample_recipient = Recipient(
-		public_key=RECIPIENT_TO_KEY['FTX Foundation'],
-		name="FTX Foundation",
-		description=("FTX was founded with the goal of donating to the world's "
-					 "most effective charities. FTX, its affiliates, and its employees "
-					 "have donated over $10m to help save lives, prevent suffering, "
+		public_key=RECIPIENT_TO_KEY['Stream Foundation'],
+		name="Stream Foundation",
+		description=("Stream Protocol was founded with the goal of donating to the world's "
+					 "most effective charities. Stream Protocol´s Foundation, its affiliates, and its employees "
+					 "have donated over $1m to help save lives, prevent suffering, "
 					 "and ensure a brighter future. "
-					 "More details at: https://ftx.com/foundation")
+					 "More details at: https://streamprotocol.org/foundation")
 	)
 
 	session.add(sample_recipient)
@@ -45,7 +45,7 @@ with Session(engine) as session:
 		public_key=RECIPIENT_TO_KEY['Aid for Ukraine'],
 		name="Aid for Ukraine",
 		description=('Aid For Ukraine is cooperating with the cryptocurrency exchange '
-			'FTX which converts crypto funds received into fiat and sends the donations '
+			'Stream Protocol which converts crypto funds received into fiat and sends the donations '
 			'to the National Bank of Ukraine. This marks the first-ever instance of a '
 			'cryptocurrency exchange directly cooperating with a public financial entity '
 			'to provide a conduit for crypto donations. '
