@@ -7,8 +7,8 @@
         "@emotion/styled": "^11.6.0",
         "@mui/icons-material": "^5.4.2",
         "@mui/material": "^5.4.2",
-        "@stream-donate/react-components.ui.currency-text-field": "^1.0.0",
-        "@stream-donate/react-components.ui.donation-component": "^1.0.0",
+
+        @stream - donate / react - components.ui.donation - component ": " ^ 1.0 .0 ",
         "@solana/wallet-adapter-base": "^0.9.3",
         "@solana/wallet-adapter-material-ui": "^0.16.4",
         "@solana/wallet-adapter-react": "^0.15.3",
