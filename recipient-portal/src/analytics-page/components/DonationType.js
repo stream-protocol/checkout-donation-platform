@@ -7,7 +7,7 @@ function DonationType(props) {
   return (
     <ResponsiveContainer width="100%" height={280}>
       <PieChart width={730} height={250}>
-        <Pie data={data} dataKey="value" nameKey="type" cx="50%" cy="50%" innerRadius={50} outerRadius={80} fill="#82ca9d" label />
+        <Pie data={data} dataKey="value" nameKey="type" cx="50%" cy="50%" innerRadius={50} outerRadius={80} fill="#1a8cff" label />
         <Legend verticalAlign="top" height={36}/>
         <Tooltip/>
       </PieChart>

@@ -34,7 +34,6 @@ import AnalyticsPage from './analytics-page/AnalyticsPage';
 import dona from './dona.svg';
 
 import { WalletDisconnectButton } from '@solana/wallet-adapter-material-ui'; 
-import DonationType from './analytics-page/components/DonationType';
 
 export const RecipientsContext = React.createContext();
 
@@ -147,7 +146,7 @@ function MerchantPortal(props) {
           }}
         >
           <Box sx={{ px:6, py:4 }}>
-            <img width="100%" src={DonationType} alt="Donate" />
+            <img width="100%" src={dona} alt="Dona" />
           </Box>
           <List sx={{flexGrow:1}} disablePadding>
             <ListItem 

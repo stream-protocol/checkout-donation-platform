@@ -19,7 +19,7 @@ function DonationType(props) {
           cy="50%" 
           innerRadius={50} 
           outerRadius={80} 
-          fill="#82ca9d" 
+          fill="#1a8cff" 
           label={({
             cx,
             cy,

@@ -8,70 +8,66 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
-    palette: {
-        primary: {
-            main: "#22252B",
-        },
-        secondary: {
-            main: "#2d3139",
-            dark: "#008ae6",
-            light: "#7e879a",
-        },
-        success: {
-            main: "#00C49F",
-        },
-        error: {
-            main: "#ff4200",
-        },
-        info: {
-            main: "#FFBB28",
-        },
+  palette: {
+    primary: {
+      main: "#0088FE",
     },
-    shape: {
-        borderRadius: 16,
+    secondary: {
+      main: "#5b00b5",
+      dark: "#e7e0ec",
+      light: "#fbf9fd",
     },
-    typography: {
-        fontFamily: '"Barlow", "Roboto", "Helvetica", "Arial", sans-serif',
-        h1: {
-            fontWeight: 700,
-        },
-        h2: {
-            fontWeight: 700,
-        },
-        h3: {
-            fontWeight: 700,
-        },
-        h4: {
-            fontWeight: 700,
-        },
-        h5: {
-            fontWeight: 700,
-        },
-        h6: {
-            fontWeight: 600,
-        },
-        body1: {
-            fontWeight: 600,
-        },
-        button: {
-            fontWeight: 700,
-            textTransform: "none",
-        },
+    success: {
+      main: "#00C49F",
     },
+    error: {
+      main: "#ff4200",
+    },
+    info: {
+      main: "#FFBB28",
+    },
+  },
+  shape: {
+      borderRadius: 16,
+  },
+  typography: {
+    fontFamily: '"Barlow", "Roboto", "Helvetica", "Arial", sans-serif',
+    h1: {
+      fontWeight: 700,
+    },
+    h2: {
+      fontWeight: 700,
+    },
+    h3: {
+      fontWeight: 700,
+    },
+    h4: {
+      fontWeight: 700,
+    },
+    h5: {
+      fontWeight: 700,
+    },
+    h6: {
+      fontWeight: 600,
+    },
+    body1: {
+      fontWeight: 600,
+    },
+    button: {
+      fontWeight: 700,
+      textTransform: "none",
+    },
+  },
 });
 
-ReactDOM.render( <
-    React.StrictMode >
-    <
-    ThemeProvider theme = { theme } >
-    <
-    CssBaseline / >
-    <
-    CheckoutDemo / >
-    <
-    /ThemeProvider> < /
-    React.StrictMode > ,
-    document.getElementById('root')
+ReactDOM.render(
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <CheckoutDemo />
+    </ThemeProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

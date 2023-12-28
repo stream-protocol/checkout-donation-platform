@@ -10,7 +10,7 @@ importers:
       '@emotion/styled': ^11.6.0
       '@mui/icons-material': ^5.4.1
       '@mui/material': ^5.4.1
-      '@stream-donate/react-components.ui.currency-text-field': ^1.0.0
+      '@riptide-dona/react-components.ui.currency-text-field': ^1.0.0
       '@testing-library/jest-dom': ^5.16.2
       '@testing-library/react': ^12.1.2
       '@testing-library/user-event': ^13.5.0
@@ -31,7 +31,7 @@ importers:
       '@emotion/styled': registry.npmjs.org/@emotion/styled/11.6.0_6051c8b70bfa52211d6f419a3c4413f0
       '@mui/icons-material': registry.npmjs.org/@mui/icons-material/5.4.2_40fc9198f3297cec148e6ca7b8f715e2
       '@mui/material': registry.npmjs.org/@mui/material/5.4.2_6226f8758b5b21b5515ad844c1caeb22
-      '@stream-donate/react-components.ui.currency-text-field': 1.0.0_2812747285387c40c8dbda6ed6c8b1fe
+      '@riptide-dona/react-components.ui.currency-text-field': 1.0.0_2812747285387c40c8dbda6ed6c8b1fe
       '@testing-library/jest-dom': registry.npmjs.org/@testing-library/jest-dom/5.16.2
       '@testing-library/react': registry.npmjs.org/@testing-library/react/12.1.3_react-dom@17.0.2+react@17.0.2
       '@testing-library/user-event': registry.npmjs.org/@testing-library/user-event/13.5.0
@@ -69,8 +69,8 @@ packages:
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
     dev: false
 
-  /@stream-donate/react-components.ui.currency-text-field/1.0.0_2812747285387c40c8dbda6ed6c8b1fe:
-    resolution: {integrity: sha1-JFZZiSd+6kKcqajzsfAjsxRFaUY=, tarball: '@stream-donate/react-components.ui.currency-text-field/-/@stream-donate-react-components.ui.currency-text-field-1.0.0.tgz'}
+  /@riptide-dona/react-components.ui.currency-text-field/1.0.0_2812747285387c40c8dbda6ed6c8b1fe:
+    resolution: {integrity: sha1-JFZZiSd+6kKcqajzsfAjsxRFaUY=, tarball: '@riptide-dona/react-components.ui.currency-text-field/-/@riptide-dona-react-components.ui.currency-text-field-1.0.0.tgz'}
     peerDependencies:
       '@mui/material': ^5.2.7
       prop-types: ^15.7.2

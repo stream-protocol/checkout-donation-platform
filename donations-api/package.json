@@ -1,11 +1,11 @@
 {
-    "name": "stream-donate-api",
-    "version": "1.0.1",
-    "description": "API for Stream Protocol´s checkout donation platform",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Stream Protocol",
-    "license": "ISC"
+  "name": "stream-donate-api",
+  "version": "1.0.0",
+  "description": "API for Disbursement & Charity platform for StreamPay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stream Protocol",
+  "license": "MIT"
 }
